@@ -3,38 +3,37 @@
 }
     
 body {
-    background-color: #fefefe;
-    font-family: 'Karla', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    font-weight: 300;
+    background-color: #202858;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
 }
+
 
 .container-fluid {
     padding: 0;
 }
 
 .jumbotron {
-    background-color: #b0dad9;
+    background-color: #fbfbfb;
 }
     
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
     letter-spacing: 5px;
     font-weight: 400;
 }
 
-/* employee cards formatting */
 
 .main {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
 div.card {
-    margin: 15px 0;
-    -webkit-box-shadow: 6px 6px 9px -4px rgba(0,0,0,0.6); 
-    box-shadow: 6px 6px 9px -4px rgba(0,0,0,0.6);
+    margin: 30px 0;
+    -webkit-box-shadow: 6px 6px 9px -4px rgba(0, 0, 0, 0.6); 
+    box-shadow: 6px 6px 9px -4px rgba(0, 0, 0, 0.6);
 }
 
 div.card-body {
@@ -42,14 +41,14 @@ div.card-body {
 }
 
 div.card-header {
-    background:(#01490c);
+    background:(#19333c);
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
 .card-header h2 {
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 45px;
+    font-weight: 200;
 }
 
 h5.card-title {
@@ -65,6 +64,6 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: #e53a0f;
+    color: #000000;
     text-decoration: none;
 }
