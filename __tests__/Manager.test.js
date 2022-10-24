@@ -1,26 +1,20 @@
-const Manager = require('../lib/Manager');
+// My Attempt
+const Manager = require("../lib/Manager");
 
-test('creates a manager object inherited from Employee', () => {
-    const manager = new Manager('Alex', 1, 'alex@domain.com', '867-5309');
-
-    expect(manager.name).toEqual(expect.any(String));
-    expect(manager.id).toEqual(expect.any(Number));
-    expect(manager.email).toEqual(expect.any(String));
-
-    console.log(`Manager Name: ${manager.name}`);
-    console.log(`Manager ID: ${manager.id}`);
-    console.log(`Manager E-mail: ${manager.email}`);
+test("Can create an office number.", () => {
+    const testOfficeNumber = 2;
+    const employeeInstance = new Manager("James", 2, "jamesljenks@gmail.com", testOfficeNumber);
+    expect(employeeInstance.officeNumber).toBe(testOfficeNumber);
 });
 
-test('creates an office number', () => {
-    const manager = new Manager('Alex', 2, 'alex@domain.com', '867-5309');
-
-    expect(manager.officeNumber).toEqual(expect.any(String));
-    console.log(`Office Number: ${manager.officeNumber}`);
+test("Testing officeNumber will return office number.", () => {
+    const testOfficeNumber = 2;
+    const employeeInstance = new Manager("James", 2, "jamesljenks@gmail.com", testOfficeNumber);
+    expect(employeeInstance.getOfficeNumber()).toBe(testOfficeNumber);
 });
 
-test('creates a role of manager', () => {
-    const manager = new Manager('Alex', 2, 'alex@domain.com', '867-5309');
-
-    expect(manager.getRole()).toBe('Manager');
+test("Testing role.", () => {
+    const returnValue = "Manager";
+    const employeeInstance = new Manager("James", 2, "jamesljenks@gmail.com", 2);
+    expect(employeeInstance.getRole()).toBe(returnValue);
 });
