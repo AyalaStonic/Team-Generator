@@ -1,6 +1,7 @@
 {
   "name": "CoolEmployees",
   "version": "1.0.0",
+  "homepage":"https://ayalastonic.github.io/Team-Generator/",
   "description": "OOP",
   "main": "index.js",
   "directories": {
@@ -8,7 +9,11 @@
     "test": "test"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy":"npm run build",
     "test": "jest --verbose test/*"
+
+    
   },
   "repository": {
     "type": "",
@@ -16,8 +21,9 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/AyalaStonic/Team-Generator",
+  "homepage": "https://ayalastonic.github.io/Team-Generator/",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "inquirer": "^6.3.1"
   },
   "devDependencies": {
