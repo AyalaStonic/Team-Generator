@@ -149,6 +149,7 @@ function addEngineer() {
 
   }
 
+  // Function for building the Team in html 
 
 function htmlBuilder () {
     console.log("Team created!")
